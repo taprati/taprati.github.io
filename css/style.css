@@ -1,31 +1,59 @@
-/* Top Bar */
+/* Top Bar --------------------------------------------------*/
 .topheader {
     background-color:DarkGreen;
     color:white;
     padding:20px;
+    font-family: Arial
 }
+
 /* all nav bar styling --------------------------------------*/
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  background-color: #333;
+  font-family: Arial
 }
-/* Style the links inside the navigation bar */
-.topnav a {
+.topnav li {
   float: left;
-  color: #f2f2f2;
+  border-right: 1px solid #bbb;
+}
+.topnav li a, .dropbtn {
+  display: inline-block;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
+.topnav li a:hover, .dropdown:hover .dropbtn {
+  background-color: White;
+  color:black;
+}
+.topnav li .dropdown {
+  display: inline-block;
+}
+.topnav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.topnav .dropdown-content a {
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #FF8C00;
-  color: white;
+.topnav .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.topnav .dropdown:hover .dropdown-content {
+  display: block;
+}
+.topnav .active {
+  background-color:DarkOrange;
 }
